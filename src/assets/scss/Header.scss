@@ -1,0 +1,19 @@
+.header {
+  font-family: "Times New Roman";
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 141.8%;
+  position: relative;
+  z-index:999 ;
+  /* or 35px */
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:100px;
+  padding: 100px 135px 0 135px;
+  color: #fafafa;
+
+  text-shadow: -10px 10px 24px rgba(250, 250, 250, 0.4),
+    7px 0px 25px rgba(250, 250, 250, 0.6);
+}

@@ -1,0 +1,149 @@
+main {
+  margin-top: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:999 ;
+  position: relative;
+  .author-container {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    .book-detail {
+      text-align: left;
+      flex-direction: column;
+      margin-right: 103px;
+      display: flex;
+      justify-content: center;
+
+      h1.book-title {
+        margin-bottom: 20px;
+        font-family: "Times New Roman";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 95.95%;
+        text-align: left;
+        color: #fafafa;
+        text-shadow: -10px 10px 24px rgba(250, 250, 250, 0.4),
+          7px 0px 25px rgba(250, 250, 250, 0.6);
+      }
+      p.book-description {
+        font-family: "Times New Roman";
+        margin-bottom: 40px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 95.95%;
+        color: #fafafa;
+        text-shadow: -10px 10px 24px rgba(250, 250, 250, 0.4),
+          7px 0px 25px rgba(250, 250, 250, 0.6);
+      }
+      span.book-author {
+        font-family: "Times New Roman";
+        margin-bottom: 113px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 95.95%;
+        /* or 19px */
+
+        display: flex;
+        align-items: center;
+
+        color: #fafafa;
+
+        text-shadow: -10px 10px 24px rgba(250, 250, 250, 0.4),
+          7px 0px 25px rgba(250, 250, 250, 0.6);
+      }
+      button.order-button {
+        cursor: pointer;
+        border: 1px solid rgba(228, 142, 22, 1);
+        height: 75px;
+        width: 241px;
+        position: relative;
+
+        background: rgba(0, 0, 0, 0.9);
+        border: 1px solid #e48e16;
+        box-shadow: 0px 0px 17px 4px rgba(228, 142, 22, 0.39),
+          inset 0px 0px 25px 3px #f6e798;
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 31px;
+        text-transform: uppercase;
+        text-align: center;
+
+        color: #e48e16;
+        .triangle {
+          position: absolute;
+          &.triangle1 {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -2px;
+            left: -8px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid rgba(80, 74, 47, 0.5);
+            z-index: 1;
+            transform: rotate(315deg);
+          }
+          &.triangle2 {
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -2px;
+            left: -8px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid rgba(80, 74, 47, 0.5);
+            z-index: 1;
+            transform: rotate(225deg);
+          }
+          &.triangle3 {
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -2px;
+            right: -8px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid rgba(80, 74, 47, 0.5);
+            z-index: 1;
+            transform: rotate(-225deg);
+          }
+          &.triangle4 {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -2px;
+            right: -8px;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid rgba(80, 74, 47, 0.5);
+            z-index: 1;
+            transform: rotate(-315deg);
+          }
+        }
+      }
+    }
+    .book-images {
+      display: flex;
+      .img-container {
+        width: 100%;
+        height: auto;
+        max-width: 373px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 100%;
+          // height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.read-more {
+    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+    z-index:999 ;
+    &__description {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FAFAFA;
+        text-shadow: -10px 10px 24px rgba(250, 250, 250, 0.4),
+            7px 0px 25px rgba(250, 250, 250, 0.6);
+    }
+    &__title {
+        margin: 40px 0 20px 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #E48E16;
+        text-shadow: -10px 10px 24px rgba(228, 142, 22, 0.4),
+            7px 0px 25px rgba(228, 142, 22, 0.6);
+    }
+}
